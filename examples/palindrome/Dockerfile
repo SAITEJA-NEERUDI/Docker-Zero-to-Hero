@@ -4,7 +4,7 @@ FROM python:3.11-slim-buster
 RUN pip install -r requirements.txt
 
 # Copy the Python script to the container
-COPY palindrome_checker.py /app/
+COPY palindromechecker.py /app/
 
 # Set the working directory
 WORKDIR /app
@@ -13,4 +13,4 @@ WORKDIR /app
 EXPOSE 8080
 
 # Define the entrypoint
-CMD ["python", "palindrome_checker.py"]
+CMD ["python", "palindromechecker.py"]
